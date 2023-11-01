@@ -16,7 +16,23 @@ nav a:hover {color: #A595A3;
             
 } 
 
+/* Your existing styles */
 
-
-
-
+/* Add a media query for tablet and smaller viewports */
+@media screen and (max-width: 768px) {
+    nav {
+      display: block; /* Change the navigation to a block display for stacking */
+      text-align: center; /* Center-align the links */
+    }
+  
+    nav a {
+      display: block; /* Change the links to block display for stacking */
+      margin: 10px 0; /* Add spacing around the links */
+    }
+    
+    /* Hide the pipe characters within the media query */
+    nav span {
+      display: none;
+    }
+  }
+  
