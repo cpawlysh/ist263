@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .skip {
+            background-color: #ffbf00;
+            padding: 10px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute; /* it positions an element relative to the top left of the viewport */
+            top: 10px;
+            left: 999px; /* -999 pushes it off the left side of the screen*/
+        }
+        .skip:focus {
+            left: 10px; /* bring it back when its been tabbed too*/
+        }
+        /* using above on lab*/
+    </style>
+</head>
+<body>
+    <!--dont forget proper semantic tags -->
+    <nav>
+        <!--for complex websites change the order the tab goes in-->
+        <a href="#main" tabindex="1" class="skip">Skip to Content </a> <br>
+        <a href="http://www.syr.edu" tabindex="2">Syracuse University</a> <br>
+        <a href="http://www.ischool.syr.edu" tabindex="3">iSchool</a> <br>
+        <a href="http://www.soe.syr.edu" tabindex="4">School of Education</a>
+    </nav>
+    <main>
+        <h1 id="main">Accessibility or Ally</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex obcaecati ipsum saepe sint adipisci quod suscipit nam facilis a? Non impedit recusandae rerum repellat repellendus molestiae iusto, excepturi eos.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+body {
+    background-color: #F7E3E2;
+    color: #663333bf;
+}
+a {color: #FF7FAC;}
+h1, h2, h3, h4, h5, h6 {color: #FF5077;}
+
+nav{background-color: #de77672d;
+    padding: 10px;
+    margin-bottom: 30px ;
+}
+  
+nav a:hover {color: #A595A3;
+            background-color: #FFB6C1;
+            
+} 
+
+/* Add a media query for tablet and smaller viewports */
+@media screen and (max-width: 768px) {
+    nav {
+      display: block; /* Change the navigation to a block display for stacking */
+      text-align: center; /* Center-align the links */
+    }
+  
+    nav a {
+      display: block; /* Change the links to block display for stacking */
+      margin: 10px 0; /* Add spacing around the links */
+      width: 100%; /* Make the links occupy 100% of the horizontal space */
+    }
+    
+    /* Hide the pipe characters within the media query */
+    nav span {
+      display: none;
+    }
+  }
+  
