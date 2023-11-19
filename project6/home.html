@@ -13,6 +13,7 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
             box-sizing: border-box;
         }
 
@@ -102,8 +103,13 @@
             .flex-item1, .flex-item2, .flex-item3 {
                 width: 100%;
             }
-            
+            .images, .article{
+                max-width: fit-content;
+                flex-direction: column;
+            }
         }
+
+
 
         .flex-item1, .flex-item2, .flex-item3 {
             padding: 15px;
@@ -170,14 +176,7 @@
         text-decoration: underline;
     }
 
-    @media screen and (max-width: 800px) {
-        .article {
-            width: 100%;
-        }
-        
-    }
-   
-   
+ 
    .fashion {
         display: flex;
 }
@@ -186,6 +185,7 @@
         display: flex;
         justify-content: center; /* Center the items horizontally */
         align-items: center;
+        
     }
     .images div {
       margin: 10px; 

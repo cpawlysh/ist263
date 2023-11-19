@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Sustainable Stitch</title>
     <style>
+
+        .title { 
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
             box-sizing: border-box;
         }
 
         h1 {
             text-align: center;
             margin-top: 20px;
+            font-size: 45px;
         }
 
         .header-container {
@@ -65,50 +71,125 @@
             flex-wrap: wrap;
         }
 
-        .flex-item {
+        .flex-item1, .flex-item2, .flex-item3 {
             width: 30%;
             margin: 10px;
         }
 
         @media screen and (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav a {
-                margin: 5px 0;
-            }
-
-            .header-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .bow {
-                width: 50%; /* Adjust for smaller screens */
-            }
-
-            .flex-container {
-                flex-direction: column;
-            }
-
-            .flex-item {
-                width: 100%;
-            }
+            body {
+            font-size: 16px; /* Adjust as needed */
         }
 
+        h1 {
+            font-size: 30px; /* Adjust as needed */
+        }
+
+        .flex-item1, .flex-item2, .flex-item3, .article, .intro {
+            width: 100%;
+        }
+
+        .article {
+            padding: 10px;
+        }
+
+        .images {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .images img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .flex-item1, .flex-item2, .flex-item3 {
+            padding: 15px;
+            margin: 5px;
+            color: #000000; /* Text color, you can adjust as needed */
+            background-color: #ffffff00; /* Pastel pink background color */
+            border-radius: 40px;
+        }
         .intro {
             padding: 15px;
             margin: 10px;
-            background-color: #ffe3f973 ;
-            border-radius: 15px;
         }
+        .news {
+        text-align: center;
+        margin: 30px;
+        padding: 20px;
+        font-size: 30px;
+        color: #333;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        background-color: #d2b48c78;
+    }
+
+    .article {
+        width: 30%;
+        margin: 10px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+
+        
+    }
+
+    .article:hover {
+        transform: scale(1.05);
+    }
+
+    .article h2 {
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .article p {
+        color: #666;
+        line-height: 1.5;
+    }
+
+    .article a {
+        color: #0066cc;
+        text-decoration: none;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .article a:hover {
+        text-decoration: underline;
+    }
+
+ 
+   .fashion {
+        display: flex;
+}
+
+    .images {
+        display: flex;
+        justify-content: center; /* Center the items horizontally */
+        align-items: center;
+        
+    }
+    .images div {
+      margin: 10px; 
+    }
+
+
     </style>
 </head>
 <body>
     <div class="header-container">
-        <h1>The Sustainable Stitch</h1>
+        <h1 class="title">The Sustainable Stitch</h1>
         <img src="../images/Bow.jpg.png" class="bow" alt="pink bow">
     </div>
     <nav>
@@ -117,36 +198,88 @@
         <a href="tips.html">Tips for a Green Wardrobe</a>
     </nav>
     <img src="../project03_images/p3_image1.jpeg" class="banner" alt="fashion sketch">
-    <h3>Welcome to the World of Sustainable Fashion</h3>
+    <h3>Welcome to the World of Sustainable Fashion!</h3>
     <p class="intro">
         At our sustainable fashion hub, style meets sustainability, and together, they redefine modern fashion. Discover what sustainable fashion means, get updated on the industry's most recent news, and find endless style inspiration that marries fashion with eco-conscious choices.
         Our platform is more than just a fashion website; it's a journey towards a greener, more stylish world. Join us in exploring the intricate tapestry of fashion with sustainability as its cornerstone. Let's make every choice count, one stylish step at a time.
     </p>
     <div class="flex-container">
-        <div class="flex-item">
-            <h4>The Fashion Cycle: Trends, Transformation, and Sustainability</h4>
+        <div class="flex-item1">
+            <h4>The Fashion Cycle</h4>
             <p> 
-            -The fashion world is in constant flux, driven by various factors <br>
-            -Influences range from designers and celebrities to the omnipresent reach of social media. <br>
-            -Fast fashion brands and online shopping grant immediate access to the latest styles.
+            In the dynamic realm of fashion, a perpetual cycle of Trends, Transformation, and Sustainability shapes the industry's landscape. 
+            This ever-evolving cycle is fueled by a myriad of influences, ranging from the creative minds of designers and 
+            the glamorous allure of celebrities to the pervasive impact of social media. The immediacy of fashion is further 
+            accentuated by the presence of fast fashion brands and the convenience of online shopping, providing consumers
+             with instantaneous access to the latest styles. As the fashion world continues to spin through these interconnected 
+             phases, the need for sustainable practices gains prominence, prompting a reevaluation of the industry's environmental
+              and ethical impact. The intricate dance between trends, transformation, and sustainability encapsulates the essence 
+              of the fashion cycle, reflecting both its dynamic nature and the growing importance of responsible practices.
+            </p>
+        </div> 
+        <div class="flex-item2">
+            <h4>Rapid Fashion Trends</h4> 
+            <p>
+
+                Rapid fashion trends are propelled by the regular introduction of new collections through both 
+                physical and virtual fashion shows. Fueled by a constant desire for novelty and self-expression, 
+                the fashion landscape is characterized by an ongoing state of change. The traditional notion of 
+                enduring trends is challenged as fashion cycles continue to shorten, rendering today's 'in' style 
+                potentially 'out' by the next season. This accelerated pace reflects the dynamic nature of the industry, 
+                where the pursuit of innovation and individuality remains a driving force behind evolving fashion 
+                preferences.
             </p>
         </div>
-        <div class="flex-item">
-            <h4>Rapid Fashion Trends</h4>
-            <p>- Fashion shows, whether physical or virtual, introduce new collections regularly <br>
-                -Desire for novelty and self-expression fuels ongoing change. <br>
-                -Fashion cycles are increasingly shorter; today's 'in' may be 'out' next season.
-            </p>
-        </div>
-        <div class="flex-item">
-            <h4>Sustainability Matters:</h4>
-            <p> -Rapid trend changes raise questions about sustainability <br>
-                -Pursuing the latest trends often has an environmental cost. <br>
-                -Being aware of choices is the first step toward a sustainable wardrobe.
+        <div class="flex-item3">
+            <h4>Sustainability Matters</h4>
+            <p> 
+                In the contemporary landscape of fashion, sustainability emerges as a pivotal concern, propelled by the 
+                swift and dynamic shifts in trends. The constant evolution of styles prompts a critical examination of 
+                their impact on the environment, revealing that the pursuit of the latest fashion trends often comes at a 
+                significant ecological expense. In this context, fostering awareness of our choices becomes the foundational
+                step towards cultivating a sustainable wardrobe. Acknowledging the intricate relationship between fashion 
+                choices and environmental consequences is essential, urging individuals to make informed decisions that 
+                contribute to a more sustainable and conscientious approach to personal style.
             </p>
         </div>
     </div>
-    <img src="../project03_images/runway.jpeg" alt="fashion runway">
-    <!-- Remaining content... -->
+
+  
+     <h2 class="news">Latest <br> News:</h2>
+    <div class="fashion">
+        <div class="article">
+            <h2>Is This the Beginning of the End of the Boxy Blazer?</h2>
+            <p>Say goodbye to oversized blazers – this fall, it's all about the cinched-waist blazer trend. Designers like Proenza Schouler and Stella McCartney are embracing fitted silhouettes with thin belts, while Jennifer Lawrence and other style icons lead the way on the street style scene. The nipped, hourglass look hearkens back to Dior's iconic 1947 blazer, signaling a shift in fashion's pendulum.</p>
+            <a href="https://www.vogue.com/article/cinched-blazer-trend" target="_blank">Read more</a>
+        </div>
+
+        <div class="article">
+            <h2>The Best Street Style From Milan Fashion Week</h2>
+            <p>Milan Fashion Week is here, and the stylish attendees are proving that street style can rival the runway. Check out some of the standout looks captured by Christina Fragkou, featuring fashion influencers, models, and more.</p>
+            <a href="https://www.thecut.com/2023/09/the-best-street-style-from-milan-fashion-week-ss24.html" target="_blank">Read more</a>
+            
+        </div>
+
+        <div class="article">
+            <h2>'Everyone is in the same boat': Is designing fashion worth going into debt?</h2>
+            <p>Designer Dilara Findikoglu, who has dressed A-list celebrities, withdrew from London Fashion Week due to budget constraints, shedding light on the financial challenges independent designers face. Despite the setback, Findikoglu is determined to expand her brand into a full lifestyle brand, encompassing fashion, furniture, and more.</p>
+            <a href="https://www.cnn.com/style/dilara-findikoglu-lfw-cancel-fashion-debt-september-issues/index.html" target="_blank">Read more</a>
+        </div>
+    </div> 
+   
+    
+    <div class="images">
+        <div>
+            <img src="../project03_images/runway.jpeg" alt="fashion runway" width="400" height="300">
+        </div>
+        <div>
+            <img src="../project03_images/factorysmoke.jpeg" alt="factory smoke" width="400" height="300">
+        </div>
+        <div>
+            <img src="../project03_images/garmentfactory.jpeg" alt="garment factory" width="400" height="300">
+        </div>
+    </div>
+
+
 </body>
 </html>
