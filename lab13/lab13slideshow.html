@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets Slideshow</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            background-color: #111111;
+            color: #ffffff;
+        }
+
+        #slideshow-container {
+            background-color: #000000;
+            width: 1200px;
+            margin: auto; /* margin auto is centering this container */        
+        }
+
+        #bigimages img {
+            display: none; /* Initially hide all big images */
+        }
+
+        #bigimages {
+            margin-right: 100px;
+        }
+
+        #planetinfo {
+            padding: 20px;
+            float: left; /* Added to align with bigimages */
+        }
+
+        #thumbnails {
+            width: 840px;
+            margin: auto;
+            padding-top: 20px; 
+            /* ^^ margin auto is centering this container */
+        }
+
+        /* Added to style the thumbnails */
+        #thumbnails img {
+            width: 100px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+    // Function to hide all planets and text
+    function PlanetsOff() {
+        document.querySelectorAll('#bigimages img').forEach(function(img) {
+            img.style.display = 'none';
+        });
+
+        document.querySelectorAll('#planetinfo > div').forEach(function(info) {
+            info.style.display = 'none';
+        });
+    }
+
+    // Function to display a specific planet
+    function displayPlanet(planet) {
+        PlanetsOff(); // Turn off all planets and text
+        document.getElementById(planet).style.display = 'block';
+        document.getElementById(planet + 'info').style.display = 'block';
+    }
+
+    // Event handler for thumbnails
+    function thumbnailClick(planet) {
+        displayPlanet(planet);
+    }
+
+    // Execute PlanetsOff and display the first planet when the page loads
+    window.onload = function() {
+        PlanetsOff();
+        displayPlanet('mercury');
+    };
+</script>
+
+    
+</head>
+<body>
+    <div id="slideshow-container">
+        <div id="bigimages">
+            <img src="./lab13slideshow_files/mercury.jpg" alt="mercury" id="mercury">
+            <img src="./lab13slideshow_files/venus.jpg" alt="venus" id="venus">
+            <img src="./lab13slideshow_files/earth.jpg" alt="earth" id="earth">
+            <img src="./lab13slideshow_files/mars.jpg" alt="mars" id="mars">
+            <img src="./lab13slideshow_files/jupiter.jpg" alt="jupiter" id="jupiter">
+            <img src="./lab13slideshow_files/saturn.jpg" alt="saturn" id="saturn">
+            <img src="./lab13slideshow_files/uranus.jpg" alt="uranus" id="uranus">
+            <img src="./lab13slideshow_files/neptune.jpg" alt="neptune" id="neptune">
+        </div>
+        <div id="planetinfo" class="clearfix">
+            <h1>Planets Slideshow</h1>
+            <!-- Planet info divs for each planet -->
+            <div id="mercuryinfo">
+                <h2>Mercury</h2>
+                <p>Mercury is the smallest and closest planet to the Sun in the Solar System.</p>
+            </div>
+            <div id="venusinfo">
+                <h2>Venus</h2>
+                <p>Venus is the second planet from the Sun and is similar in size and composition to Earth.</p>
+            </div>
+            <div id="earthinfo">
+                <h2>Earth</h2>
+                <p>Earth is the third planet from the Sun and is the only known celestial body to support life.</p>
+            </div>
+            <div id="marsinfo">
+                <h2>Mars</h2>
+                <p>Mars is the fourth planet from the Sun and is often referred to as the "Red Planet" due to its reddish appearance.</p>
+            </div>
+            <div id="jupiterinfo">
+                <h2>Jupiter</h2>
+                <p>Jupiter is the largest planet in our Solar System and is known for its prominent bands of clouds and the Great Red Spot.</p>
+            </div>
+            <div id="saturninfo">
+                <h2>Saturn</h2>
+                <p>Saturn is known for its stunning ring system, which is made up of ice particles, rocks, and dust.</p>
+            </div>
+            <div id="uranusinfo">
+                <h2>Uranus</h2>
+                <p>Uranus is a gas giant and is unique among the planets because it rotates on its side.</p>
+            </div>
+            <div id="neptuneinfo">
+                <h2>Neptune</h2>
+                <p>Neptune is the eighth and farthest known planet from the Sun in the Solar System.</p>
+            </div>
+        </div>
+        <div id="thumbnails">
+            <!-- Thumbnail images for each planet -->
+            <img src="./lab13slideshow_files/mercury.jpg" alt="mercury" id="mercurythumb" onclick="thumbnailClick('mercury')">
+            <img src="./lab13slideshow_files/venus.jpg" alt="venus" id="venusthumb" onclick="thumbnailClick('venus')">
+            <img src="./lab13slideshow_files/earth.jpg" alt="earth" id="earththumb" onclick="thumbnailClick('earth')">
+            <img src="./lab13slideshow_files/mars.jpg" alt="mars" id="marsthumb" onclick="thumbnailClick('mars')">
+            <img src="./lab13slideshow_files/jupiter.jpg" alt="jupiter" id="jupiterthumb" onclick="thumbnailClick('jupiter')">
+            <img src="./lab13slideshow_files/saturn.jpg" alt="saturn" id="saturnthumb" onclick="thumbnailClick('saturn')">
+            <img src="./lab13slideshow_files/uranus.jpg" alt="uranus" id="uranusthumb" onclick="thumbnailClick('uranus')">
+            <img src="./lab13slideshow_files/neptune.jpg" alt="neptune" id="neptunethumb" onclick="thumbnailClick('neptune')">
+        </div>
+    </div>
+</body>
+</html>
