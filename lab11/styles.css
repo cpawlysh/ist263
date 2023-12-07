@@ -15,6 +15,7 @@ nav a:hover {color: #A595A3;
             background-color: #ffa7b4;
             
 } 
+h1{font-family: 'Noto Sans', sans-serif;}
 
 /* Add a media query for tablet and smaller viewports */
 @media screen and (max-width: 768px) {
