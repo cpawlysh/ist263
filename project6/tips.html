@@ -9,6 +9,94 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+        <style>
+          
+
+        h3 {
+            background-color: #B2456E;
+            color: #FBEAE7;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        p {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+         h3 {
+          background-color: #B2456E;
+          color: #FBEAE7;
+          padding: 20px;
+          margin: 20px;
+          border-radius: 50px;
+          text-align: center;
+        }
+
+        p {
+          padding: 20px;
+          background-color: #fff;
+          margin: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 10px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between columns */
+        }
+
+        .tips-column {
+            flex: 3; /* Adjust the ratio between the tips and the brands column */
+        }
+
+        .brands-column {
+            flex: 1; /* This column takes less space than the tips-column */
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            margin-top: 10px; /* Assuming you want a margin from the header */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .tips-column,
+            .brands-column {
+                margin: 20px;
+                padding: 20px;
+                margin-right: 0;
+                margin-left: 0;
+                flex-basis: auto; /* On small screens, let columns stack */
+            }
+        }
+          
+        
+          </style>
     </head>
         <body>
             
@@ -110,7 +198,7 @@
             </p>
                  
             <footer>
-                <p>&copy; 2023 The Sustainable Stitch</p>
+                &copy; 2023 The Sustainable Stitch
             </footer>
 
         </body>

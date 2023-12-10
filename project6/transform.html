@@ -11,112 +11,92 @@
         <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
         <style>
-       
-            /* makes the list go to the right*/
             .content {
                 display: flex;
                 flex-wrap: wrap;
             }
-    
+        
             .main-section {
                 flex: 1 1 60%; /* Adjust the main content width */
-                margin-right: 20px;
+                margin-right: 20px; /* Keeps the right margin only for the main section */
                 background-color: #fff;
+                margin-top: 10px;
                 padding: 20px;
-                
                 margin-bottom: 20px;
+                border-left: 5px solid #B2456E;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
+                transition: all 0.3s ease-in-out;
+                border-radius: 15px;
+                background-color: #FBEAE7;
             }
-    
+        
             .side-section {
                 flex: 1 1 30%; /* Adjust the sidebar content width */
+                padding: 20px;
+                margin-bottom: 20px;
+                border-left: 5px solid #B2456E;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
+                transition: all 0.3s ease-in-out;
+                background-color: #FBEAE7;
+                border-radius: 15px;
             }
-    
+        
+            .main-section:hover, .side-section:hover {
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                background: #f9f9f9;
+            }
+        
             h2 {
-                color: #5e2ca5;
+                color: #B2456E;
                 text-transform: uppercase;
+                border-bottom: 2px solid #B2456E;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
             }
-    
+        
             p {
+                color: #555;
                 line-height: 1.6;
+                margin-bottom: 15px;
             }
-    
+        
+            p a {
+                color: #5e2ca5;
+                text-decoration: none; /* Assuming you want to remove underlines from links */
+                transition: all 0.2s ease-in-out;
+            }
+        
+            p a:hover {
+                color: #826ab4;
+            }
+        
             ol {
-                padding-left: 20px;
-                list-style-position: inside; /* Set list style position inside the list item */
+                counter-reset: list;
+                list-style: none;
             }
-            
-    
-        /* Applying a chic, minimalistic look to the content areas */
-        .main-section, .side-section {
-            background: #ffffff; /* Keeping a clean and bright background */
-            padding: 20px;
-            margin-bottom: 20px;
-            border-left: 5px solid #B2456E; /* Adding a pop of color with a vertical bar */
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease-in-out;
-        }
-    
-        .main-section:hover, .side-section:hover {
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            background: #f9f9f9; /* Slightly darker background on hover for interactive feel */
-        }
-    
-        /* Enhancing readability and providing a touch of elegance */
-        h2 {
-            color: #333; /* A darker shade for headlines */
-            border-bottom: 2px solid #B2456E; /* Underline effect with the primary color */
-            padding-bottom: 10px; /* Space between text and underline */
-            margin-bottom: 20px;
-        }
-    
-        p {
-            color: #555; /* A soft color for body text */
-            margin-bottom: 15px; /* More space between paragraphs for better readability */
-        }
-    
-        p a {
-            color: #5e2ca5; /* Matching link colors with the primary theme, no underline */
-            transition: all 0.2s ease-in-out;
-        }
-    
-        p a:hover {
-            color: #826ab4; /* Slightly lighter on hover for a subtle effect */
-        }
-    
-        /* List styling to create a unique look for your ordered lists */
-        ol {
-            counter-reset: list;
-            padding-left: 0;
-            list-style: none;
-        }
-    
-        ol li {
-            counter-increment: list;
-            position: relative;
-            padding-left: 30px; /* Space for the custom counter */
-            margin-bottom: 10px;
-        }
-    
-        ol li::before {
-            content: counter(list) ".";
-            position: absolute; 
-            left: 0;
-            color: #B2456E; /* Using the primary color for the list numbers */
-            font-weight: bold;
-        }
-    
-        /* Create a modern, clean look for images */
-        img {
-            width: 100%;
-            max-width: 500px; /* Making sure images are not too wide */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 8px; /* Slightly rounded corners for a modern look */
-           
-            margin-top: 20px; /* Some space above the image */
-        }
-    
-    
-            
+        
+            ol li {
+                counter-increment: list;
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 10px;
+            }
+        
+            ol li::before {
+                content: counter(list) ".";
+                position: absolute;
+                left: 0;
+                color: #B2456E;
+                font-weight: bold;
+            }
+        
+            img {
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+                border-radius: 8px;
+                margin-top: 20px;
+            }
         </style>
 
     </head>
@@ -139,12 +119,14 @@
                         <p>Sustainable fashion is a movement and process fostering change to fashion products and the fashion system towards greater ecological integrity and social justice. It involves an ethical approach to both the design and manufacturing of clothing by ensuring efficient use of natural resources, reducing waste and carbon footprints, promoting recycling and reuse, and improving the working conditions along the supply chain. This practice not only embraces environmentally-friendly techniques but also supports fair trade and humane labor practices, making it a holistic approach that guards against fashion's fleeting trends, and instead, invests in the longevity of garments, the well-being of the environment, and the value of human labor. 
                         <br><a href="https://vogue.sg/vogues-ultimate-guide-to-sustainable-fashion/">Vogue's Ultimate Guide to Sustainable Fashion</a></p>
                         <img src="../project03_images/garmentfactory.jpeg" alt="garment factory" width="500" height="300">
+                       
                     </section>
         
                     <section class="main-section">
                         <h2>Why Should I Care?</h2>
                         <p>Did you know that the fashion industry is one of the leading contributors to environmental degradation? According to a report by the United Nations Environment Programme (UNEP), the fashion industry is responsible for 10% of global greenhouse gas emissions and consumes more energy than the aviation and shipping industries combined.</p>
-                        <p>Furthermore, the fast fashion culture has led to a staggering amount of textile waste. In the United States alone, the average consumer throws away a shocking 81.5 pounds of clothing every year, as reported by Earth.org. These discarded clothes end up in landfills, where they take years to decompose, releasing harmful chemicals into the environment. <a href="link-to-more-information">Source: UNEP's Fashion and Environment Report, Statistics About Fast Fashion Waste</a></p>
+                        <p>Furthermore, the fast fashion culture has led to a staggering amount of textile waste. In the United States alone, the average consumer throws away a shocking 81.5 pounds of clothing every year, as reported by Earth.org. These discarded clothes end up in landfills, where they take years to decompose, releasing harmful chemicals into the environment. 
+                        <br> <a href="https://www.unep.org/news-and-stories/story/environmental-costs-fast-fashion">UNEP's Fashion and Environment Report</a></p>
                         <img src="../project03_images/factorysmoke.jpeg" alt="factory smoke" width="500" height="300">
                     </section>
         
@@ -165,7 +147,7 @@
             </main>
         
             <footer>
-                <p>&copy; 2023 The Sustainable Stitch</p>
+                &copy; 2023 The Sustainable Stitch
             </footer>
     </body>
 </html>

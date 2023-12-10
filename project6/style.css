@@ -37,7 +37,7 @@ h1 {
 
 .bow {
     width: 10%;
-    margin: 10px;
+    margin: 1px;
 }
 
 .header-container {
@@ -73,5 +73,5 @@ footer p {
         margin: 5px 0;
     }
 
-
+   
 }
