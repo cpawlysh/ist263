@@ -3,51 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <title>The Sustainable Stitch</title>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <style>
 
-        .title { 
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        body {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            box-sizing: border-box;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 45px;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .bow {
-            width: 10%;
-            margin: 10px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333333;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
 
         img.banner {
             width: 100vw;
@@ -72,56 +35,33 @@
             flex-wrap: wrap;
         }
 
-        .flex-item1, .flex-item2, .flex-item3 {
-            width: 30%;
-            margin: 10px;
+        .flex-item1 {
+            background-color: #B2456E;
+            color: #FBEAE7;
         }
-
-        @media screen and (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav a {
-                margin: 5px 0;
-            }
-
-            .header-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .bow {
-                width: 50%; /* Adjust for smaller screens */
-            }
-
-            .flex-container {
-                flex-direction: column;
-                
-            }
-
-            .flex-item1, .flex-item2, .flex-item3 {
-                width: 100%;
-            }
-            .images, .article{
-                max-width: fit-content;
-                flex-direction: column;
-            }
+        .flex-item2 {
+            background-color: #FBEAE7;
+            color: #b2456f;
         }
-
-
+        .flex-item3 {
+            background-color:#552619 ;
+            color: #FBEAE7;
+        }
+        
+        
 
         .flex-item1, .flex-item2, .flex-item3 {
-            padding: 15px;
+            padding: 25px;
             margin: 5px;
-            color: #000000; /* Text color, you can adjust as needed */
-            background-color: #ffffff00; /* Pastel pink background color */
             border-radius: 40px;
+            width: 85%;
+            border-radius: 100px;
         }
         .intro {
             padding: 15px;
             margin: 10px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            size: 40px
         }
         .news {
         text-align: center;
@@ -136,11 +76,10 @@
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 20px 0;
-        background-color: #d2b48c78;
+       
     }
 
     .article {
-        width: 30%;
         margin: 10px;
         padding: 20px;
         background-color: #f5f5f5;
@@ -193,6 +132,57 @@
     }
 
 
+    @media screen and (max-width: 600px) {
+          
+            .header-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            .flex-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            
+            .images {
+                max-width: fit-content;
+                flex-direction: column;
+                align-items: center
+
+            }
+            .fashion { 
+                flex-direction: column;
+                max-width: fit-content;
+                align-items: center
+
+            }
+            .centered {
+                display:none;
+            }
+        }
+
+        .centered {
+            position: absolute;
+            top: 102%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #333333;
+            color: white;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-radius: 15px;
+            }
+
+        .text-image{
+            position: relative;
+        }
+
+        hr {
+            border-top: 3px dotted #000000;
+        }
+        
     </style>
 </head>
 <body>
@@ -200,60 +190,57 @@
         <h1 class="title">The Sustainable Stitch</h1>
         <img src="../images/Bow.jpg.png" class="bow" alt="pink bow">
     </div>
+
     <nav>
         <a href="home.html">Home</a>
         <a href="transform.html">Ways to Transform</a>
         <a href="tips.html">Tips for a Green Wardrobe</a>
     </nav>
-    <img src="../project03_images/p3_image1.jpeg" class="banner" alt="fashion sketch">
-    <h3>Welcome to the World of Sustainable Fashion!</h3>
+
+
+
+    <div class="text-image">
+        <img src="../project03_images/p3_image1.jpeg" class="banner" alt="fashion sketch" style="width:100%;">
+        <div class="centered">
+            <h4>Welcome to the World of Sustainable Fashion!</h4>
+        </div>
+    </div>  <hr>
+
+   <br>
     <p class="intro">
         At our sustainable fashion hub, style meets sustainability, and together, they redefine modern fashion. Discover what sustainable fashion means, get updated on the industry's most recent news, and find endless style inspiration that marries fashion with eco-conscious choices.
         Our platform is more than just a fashion website; it's a journey towards a greener, more stylish world. Join us in exploring the intricate tapestry of fashion with sustainability as its cornerstone. Let's make every choice count, one stylish step at a time.
     </p>
+
+    <hr>
+    <br>
+    <br>
+    <br>
+
     <div class="flex-container">
         <div class="flex-item1">
-            <h4>The Fashion Cycle</h4>
+            <h3>The Fashion Cycle</h3>
             <p> 
-            In the dynamic realm of fashion, a perpetual cycle of Trends, Transformation, and Sustainability shapes the industry's landscape. 
-            This ever-evolving cycle is fueled by a myriad of influences, ranging from the creative minds of designers and 
-            the glamorous allure of celebrities to the pervasive impact of social media. The immediacy of fashion is further 
-            accentuated by the presence of fast fashion brands and the convenience of online shopping, providing consumers
-             with instantaneous access to the latest styles. As the fashion world continues to spin through these interconnected 
-             phases, the need for sustainable practices gains prominence, prompting a reevaluation of the industry's environmental
-              and ethical impact. The intricate dance between trends, transformation, and sustainability encapsulates the essence 
-              of the fashion cycle, reflecting both its dynamic nature and the growing importance of responsible practices.
+                In the fast-paced world of fashion, Trends, Transformation, and Sustainability shape the industry. Influenced by designers, celebrities, and social media, this dynamic cycle is accelerated by fast fashion and online shopping, giving consumers instant access to the latest styles. As the fashion landscape evolves, there's a growing emphasis on sustainability, urging a reassessment of the industry's environmental and ethical impact. This dance between trends, transformation, and sustainability captures the essence of the fashion cycle, highlighting its dynamic nature and the rising importance of responsible practices.
             </p>
         </div> 
         <div class="flex-item2">
-            <h4>Rapid Fashion Trends</h4> 
+            <h3>Rapid Fashion Trends</h3> 
             <p>
-
-                Rapid fashion trends are propelled by the regular introduction of new collections through both 
-                physical and virtual fashion shows. Fueled by a constant desire for novelty and self-expression, 
-                the fashion landscape is characterized by an ongoing state of change. The traditional notion of 
-                enduring trends is challenged as fashion cycles continue to shorten, rendering today's 'in' style 
-                potentially 'out' by the next season. This accelerated pace reflects the dynamic nature of the industry, 
-                where the pursuit of innovation and individuality remains a driving force behind evolving fashion 
-                preferences.
+                Rapid fashion trends thrive on frequent new collections showcased in both physical and virtual fashion shows. Driven by a constant desire for novelty and self-expression, the fashion landscape is in a perpetual state of change. The traditional idea of enduring trends is challenged as fashion cycles shorten, making today's 'in' style possibly 'out' by the next season. This accelerated pace mirrors the dynamic nature of the industry, where the pursuit of innovation and individuality continues to shape evolving fashion 
             </p>
         </div>
         <div class="flex-item3">
-            <h4>Sustainability Matters</h4>
+            <h3>Sustainability Matters</h3>
             <p> 
-                In the contemporary landscape of fashion, sustainability emerges as a pivotal concern, propelled by the 
-                swift and dynamic shifts in trends. The constant evolution of styles prompts a critical examination of 
-                their impact on the environment, revealing that the pursuit of the latest fashion trends often comes at a 
-                significant ecological expense. In this context, fostering awareness of our choices becomes the foundational
-                step towards cultivating a sustainable wardrobe. Acknowledging the intricate relationship between fashion 
-                choices and environmental consequences is essential, urging individuals to make informed decisions that 
-                contribute to a more sustainable and conscientious approach to personal style.
+                In today's fashion scene, sustainability is a key concern driven by rapid shifts in trends. The continuous evolution of styles prompts a critical look at their environmental impact, revealing that chasing the latest fashion trends often comes at a significant ecological cost. Fostering awareness of our choices becomes the foundational step toward cultivating a sustainable wardrobe. Recognizing the intricate link between fashion choices and environmental consequences is crucial, urging individuals to make informed decisions that contribute to a more sustainable and conscientious approach to personal style.
             </p>
         </div>
     </div>
 
   
      <h2 class="news">Latest <br> News:</h2>
+
     <div class="fashion">
         <div class="article">
             <h2>Is This the Beginning of the End of the Boxy Blazer?</h2>
@@ -287,7 +274,12 @@
             <img src="../project03_images/garmentfactory.jpeg" alt="garment factory" width="400" height="300">
         </div>
     </div>
+    <br>
 
+    <footer>
+        <p>&copy; 2023 The Sustainable Stitch</p>
+    </footer>
+    
 
 </body>
 </html>

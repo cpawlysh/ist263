@@ -1,0 +1,77 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #ffb1f565;
+}
+
+
+.title { 
+    font-family: 'Rock Salt', cursive;
+    
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 45px;
+    
+}
+
+.bow {
+    width: 10%;
+    margin: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #FBEAE7;
+    color: #b2456f;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .bow {
+        width: 30%; /* Adjust for smaller screens */
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+
+}
