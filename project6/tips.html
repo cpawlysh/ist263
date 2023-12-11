@@ -10,91 +10,71 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
         <style>
-          
-
-        h3 {
-            background-color: #B2456E;
-            color: #FBEAE7;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 50px;
-            text-align: center;
-        }
-
-        p {
-            padding: 20px;
-            background-color: #fff;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-         h3 {
-          background-color: #B2456E;
-          color: #FBEAE7;
-          padding: 20px;
-          margin: 20px;
-          border-radius: 50px;
-          text-align: center;
-        }
-
-        p {
-          padding: 20px;
-          background-color: #fff;
-          margin: 20px;
-          border-radius: 8px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 8px;
-          margin-bottom: 10px;
-        }
-
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px; /* Space between columns */
-        }
-
-        .tips-column {
-            flex: 3; /* Adjust the ratio between the tips and the brands column */
-        }
-
-        .brands-column {
-            flex: 1; /* This column takes less space than the tips-column */
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px;
-            margin-top: 10px; /* Assuming you want a margin from the header */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        @media screen and (max-width: 768px) {
-            .main-content {
+            
+            .tips-container {
+                display: flex;
                 flex-direction: column;
+                align-items: center;
+                margin: 20px; /* Adjusted margin for better spacing */
             }
 
-            .tips-column,
-            .brands-column {
-                margin: 20px;
-                padding: 20px;
-                margin-right: 0;
-                margin-left: 0;
-                flex-basis: auto; /* On small screens, let columns stack */
+            .tip-item {
+                width: 60%;
+                padding: 15px;
+                border: 1px solid #B2456E;
+                border-radius: 8px;
+                background-color: #FBEAE7;
+                margin-bottom: 20px;
+                
             }
-        }
-          
+
+            h3 {
+                text-align: center;
+                margin: 15px 0; /* Adjusted margin for better spacing */
+            }
+
+            .intro {
+                background-color: #B2456E;
+                color: #FBEAE7;
+                margin: 25px;
+                padding: 20px;
+                border-radius: 20px;
+            }
+
+            .brand-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                list-style-type: none;
+                margin: 20px;
+                justify-content: space-around;
+                background-color: #B2456E;
+                color: #FBEAE7;
+                border-radius: 15px;
+                padding: 20px;
+            }
+
+            .brand-item {
+                flex-basis: calc(20% - 40px);
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px #B2456E;
+                margin-bottom: 10px;
+            }
+
+            @media (max-width: 768px) {
+                .brand-item {
+                    flex-basis: calc(50% - 20px);
+                }
+            }
+
+            @media (max-width: 600px) {
+                .brand-item {
+                    flex-basis: 100%;
+                }
+            }
+
+
         
           </style>
     </head>
@@ -102,101 +82,137 @@
             
             <div class="header-container">
                 <h1 class="title">The Sustainable Stitch</h1>
-                <img src="../images/Bow.jpg.png" class="bow" alt="pink bow">
+                <img src="../project03_images/Bow.png" class="bow" alt="pink bow">
             </div>
             <nav>
                 <a href="home.html">Home</a> 
                 <a href="transform.html">Ways to Transform</a> 
                 <a href="tips.html">Tips for a Green Wardrobe</a>
             </nav>
+
             <h3>Embrace Sustainable Fashion: 15 Tips for a Green Wardrobe</h3>
-            <p>
-                Discover the steps to building an eco-conscious wardrobe while making a positive impact on the environment. Learn how to apply each tip to your fashion choices and redefine your style with sustainability in mind.<br>
-                <br>
-                <img src="../project03_images/thrifting.jpeg" width="280" height="200" alt="money">
-                <img src="../project03_images/clothingmaterials.jpeg" width="280" height="200" alt="clothing materials">
-                <img src="../project03_images/greenwashing.jpeg" width="280" height="200" alt="greenwashing">
-                <br>
-                Here are some steps you can take: <br>
-                <br>
-                <strong>1. Buy Less and Buy Better</strong> <br>
-                •Ask yourself if you truly need it and if you'll wear it at least 30 times. <br>
-                <a href="https://www.fashionrevolution.org/about/transparency/">Fashion Revolution - 30 Wears</a> <br>
-
-                <strong>2. Invest in Sustainable Fashion Brands</strong> <br>
-                •Research and discover fashion brands that promote sustainability. <br>
-                <a href="https://www.marthastewart.com/1536586/american-made-companies-products">Martha Stewart - Shop Sustainable Fashion</a> <br>
-
-                <strong>3. Shop Secondhand and Vintage </strong> <br>
-                •Explore local thrift stores, online vintage marketplaces, and secondhand shops.<br>
-                <a href="https://www.ecowatch.com/secondhand-clothes-sustainability-2648937482.html" >EcoWatch - Secondhand Fashion </a> <br>
-                 
-                <strong>4. Try Renting </strong> <br>
-                •Reduce one-time clothing purchases and environmental impact by renting outfits for special occasions or trying clothing rental services for everyday wear. <br>
-                <a href="https://www.renttherunway.com/" >Green Matters - Rental Fashion</a> <br>
-
-                <strong>5. Avoid Greenwashing </strong> <br>
-                •Scrutinize brands claiming to be sustainable. Look beyond buzzwords and check for detailed sustainability policies, certifications, and transparent communication about their practices. <br>
-                <a href="https://www.un.org/en/climatechange/science/climate-issues/greenwashing" > Greenwashing </a> <br>
- 
-                <strong>6. Know Your Materials </strong> <br>
-                •Familiarize yourself with eco-friendly materials like organic cotton, Tencel, and recycled fibers. <br>
-                <a href="https://goodonyou.eco/most-sustainable-fabrics/" >Sustainable Materials</a> <br>
-
-                <strong>7. Ask Who Made Your Clothes </strong> <br>
-                • Research brands that openly disclose information about their factories and labor practices. <br>
-                <a href="https://www.fashionrevolution.org/about/transparency/" > Transparency</a> <br>
-                 
-                <strong>8. Look for Scientific Targets </strong> <br>
-                • Support brands committed to reducing their environmental impact. <br>
-                <a href="https://sciencebasedtargets.org/" >Science Targets </a> <br>
-
-                <strong>9. Support Brands with a Positive Impact </strong> <br>
-                • Explore brands focusing on regenerative agriculture and sustainable farming practices. <br>
-                <a href="https://www.resonanceglobal.com/blog/companies-supporting-regenerative-farming-practices" > Regenerative Fashion</a> <br>
+            <p class="intro">
+                Discover the steps to building an eco-conscious wardrobe while making a positive impact on the environment. Learn how to apply each tip to your fashion choices and redefine your style with sustainability in mind.<br></p>
                 
-                <strong>10.	Watch Out for Harmful Chemicals</strong> <br>
-                • Look for certifications like "Made in Green by OEKO-TEX" to ensure that the clothing you buy adheres to strict standards regarding harmful chemicals. <br>
-                <a href="https://www.oeko-tex.com/en/about-us/references/brand-references" > Made in Green </a> <br>
-                 
-                <strong>11.	Reduce Your Water Footprint</strong> <br>
-                • Choose clothing made from materials and dyes that use less water in their production processes. <br>
-                <a href="https://www.waterfootprint.org/time-for-action/what-can-consumers-do/#productwater-footprint-cotton/" > Water Footprint</a> <br>
- 
-                <strong>12.	Be Conscious About Vegan Fashion</strong> <br>
-                • Explore innovative, eco-friendly alternatives to animal-derived materials like leather and wool. <br>
-                <a href="https://www.peta.org/living/personal-care-fashion/shop-vegan-clothing-compassionate-shopping-guide/" >Vegan Fashion </a> <br>
-                 
-                <strong> 13. Take Care of Your Clothes</strong> <br>
-                • Extend the life of your garments by avoiding overwashing and following eco-friendly laundry practices. <br>
-                <a href="https://www.chhs.colostate.edu/dm/programs-and-degrees/community-engagement-and-service-learning/sustainable-laundry/sustainable-laundry-practices/" > Garment Care </a> <br>
-               
-                <strong>14.	Avoid Microplastic Pollution</strong> <br>
-                • Invest in microplastic filters for your washing machine, like the Guppyfriend washing bag or Cora Ball. <br>
-                <a href="https://earthfriendlytips.com/guppyfriend-vs-cora-ball-for-reducing-microfiber-pollution/" >Microplastic</a> <br>
+                
 
-                <strong>15.	Ensure Your Clothes Have a Second Life</strong> <br>
-                •Resell or donate unwanted clothing items to extend their lifespan. Organize clothing swaps with friends or family. Research recycling schemes for worn-out pieces to ensure they don't end up in landfills. <br>
-                <a href="https://www.nytimes.com/wirecutter/guides/how-to-get-rid-of-old-clothes/" >Clothing Recycling </a> <br>
-            </p>
+                <h3>Here are some steps you can take:</h3>
+        <div class="tips-container">
+            <div class="tip-item">
+                <strong>1. Buy Less and Buy Better</strong>
+                <p>Ask yourself if you truly need it and if you'll wear it at least 30 times.                      </p>
+            </div>
+            <div class="tip-item">
+                <strong>2. Invest in Sustainable Fashion Brands</strong>
+                <p>Research and discover fashion brands that promote sustainability.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>3. Shop Secondhand and Vintage</strong>
+                <p>Explore local thrift stores, online vintage marketplaces, and secondhand shops.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>4. Try Renting</strong>
+                <p>Reduce one-time clothing purchases and environmental impact by renting outfits for special occasions or trying clothing rental services for everyday wear.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>5. Avoid Greenwashing</strong>
+                <p>Scrutinize brands claiming to be sustainable. Look beyond buzzwords and check for detailed sustainability policies, certifications, and transparent communication about their practices.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>6. Know Your Materials</strong>
+                <p>Familiarize yourself with eco-friendly materials like organic cotton, Tencel, and recycled fibers.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>7. Ask Who Made Your Clothes</strong>
+                <p>Research brands that openly disclose information about their factories and labor practices.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>8. Look for Scientific Targets</strong>
+                <p>Support brands committed to reducing their environmental impact.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>9. Support Brands with a Positive Impact</strong>
+                <p>Explore brands focusing on regenerative agriculture and sustainable farming practices.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>10. Watch Out for Harmful Chemicals</strong>
+                <p>Look for certifications like "Made in Green by OEKO-TEX" to ensure that the clothing you buy adheres to strict standards regarding harmful chemicals.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>11. Reduce Your Water Footprint</strong>
+                <p>Choose clothing made from materials and dyes that use less water in their production processes.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>12. Be Conscious About Vegan Fashion</strong>
+                <p>Explore innovative, eco-friendly alternatives to animal-derived materials like leather and wool.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>13. Take Care of Your Clothes</strong>
+                <p>Extend the life of your garments by avoiding overwashing and following eco-friendly laundry practices.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>14. Avoid Microplastic Pollution</strong>
+                <p>Invest in microplastic filters for your washing machine, like the Guppyfriend washing bag or Cora Ball.
+                
+                </p>
+            </div>
+            <div class="tip-item">
+                <strong>15. Ensure Your Clothes Have a Second Life</strong>
+                <p>Resell or donate unwanted clothing items to extend their lifespan. Organize clothing swaps with friends or family. Research recycling schemes for worn-out pieces to ensure they don't end up in landfills.<br>
+                
+                </p>
+            </div>
+        </div>
            
            <br>
 
-           <h3> Featured Sustainable Fashion Brands:</h3>
-            <p>
-           <strong>1. Marine Serre</strong>  <br>
-            •Explore their sustainable collections and mission. Shop for eco-conscious fashion that aligns with your values.<br>
-            <strong>2. The RealReal</strong><br>
-            •Discover their eco-friendly innovations and ethical practices. Support a brand that prioritizes sustainability.<br>
-           <strong>  3. HURR Collective</strong><br>
-            •See how this brand combines fashion and sustainability. Shop for clothing that reflects your commitment to a more eco-conscious lifestyle.<br>
-            <strong>4. Patagonia</strong><br>
-            •Explore their commitment to regenerative agriculture and sustainable practices. Find outdoor wear that's good for you and the planet.<br>
-           <strong> 5. Stella McCartney</strong> <br>
-            •Discover innovative, cruelty-free fashion that's both stylish and sustainable.<br>
-
-            </p>
-                 
+           <h3>Featured Sustainable Fashion Brands:</h3>
+           <ol class="brand-list">
+               <li class="brand-item">
+                   <strong>Marine Serre</strong><br>
+                   • Explore their sustainable collections and mission. Shop for eco-conscious fashion that aligns with your values.
+               </li>
+               <li class="brand-item">
+                   <strong>The RealReal</strong><br>
+                   • Discover their eco-friendly innovations and ethical practices. Support a brand that prioritizes sustainability.
+               </li>
+               <li class="brand-item">
+                   <strong>HURR Collective</strong><br>
+                   • See how this brand combines fashion and sustainability. Shop for clothing that reflects your commitment to a more eco-conscious lifestyle.
+               </li>
+               <li class="brand-item">
+                   <strong>Patagonia</strong><br>
+                   • Explore their commitment to regenerative agriculture and sustainable practices. Find outdoor wear that's good for you and the planet.
+               </li>
+               <li class="brand-item">
+                   <strong>Stella McCartney</strong><br>
+                   • Discover innovative, cruelty-free fashion that's both stylish and sustainable.
+               </li>
+           </ol>
             <footer>
                 &copy; 2023 The Sustainable Stitch
             </footer>
